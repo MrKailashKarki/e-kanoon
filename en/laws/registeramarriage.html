@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>10. Register a marriage | Marriage Registration Act 2028</title>
+	<style type="text/css">
+		article p{
+			text-align: left;
+			padding: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+			<a href="../">
+					<img id="logo" src="logo.png">
+				</a>
+			<nav class="sp-nav">
+				<ul>
+					<li><a href="../">गृहपृष्ठ</a></li>
+					<li><a href="#">हाम्रो बारेमा </a></li>
+					<li><a href="#">सम्पर्क</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<div id="container">
+
+		<main>
+			<aside id="sidebar-right">
+				<div>
+					<a href="mra2048pdf.pdf">Print</a>
+				</div>
+				<div>
+					<a href="mra2048pdf.pdf" download="">Download</a>
+				</div>
+				<div>
+					<a href="mra2048pdf.pdf#view=fitH&page=4">Full Screen View </a>
+				</div>
+				<div>
+					<a href="../../ne/laws/registeramarriage.html">नेपाली संस्करण हेर्नुहोस</a>
+				</div>
+				<div>
+					<strong>  Date effective :</strong> Sep. 22, 1971
+				</div>
+				<div>
+					<strong>Divisions :</strong> 4 Parts, 16 Articles
+				</div>
+			</aside>
+			<section id="main-section">
+				<form id="internalSearchForm" autocomplete="off">  
+					<label>
+						<a href="mra2048.html">See Full Act : Marriage Registration Act 2048</a>
+					</label>
+				</form>
+				<article>
+					<br>
+					<h3>10. Registration of Marriage</h3>
+					<p>
+						 (1) The Marriage Registration Officer shall register the
+marriage concluded pursuant to Section 8 in the marriage register so prescribed
+and the parties to the marriage, witnesses and Marriage Registration Officer shall
+put signature on such register. <br> <br>
+(2) Such registration shall be the evidence of a marriage concluded under
+this Act. <br> <br>
+(3) After the conclusion of such marriage, the Marriage Registration Officer
+shall issue a Marriage Registration Certificate to the parties to the marriage in a
+prescribed format. <br> <br>
+ (4) Any marriage or marital relation concluded
+pursuant to the custom, tradition, usage or practice under any religion, ethnicity or
+dynasty, after the commencement of this Act, may be registered under this Act in
+case such marriage does not contradict the provisions of this Act. <br> <br>
+(5) The couple intending to register a marriage concluded pursuant to Subsection (1) shall submit an application in the prescribed format before the
+concerned Marriage Registration Officer, where they are being resided since
+fifteen days.  <br> <br>
+(6) The provisions of Section 6 and Section 7 shall also apply in relation to
+the application submitted pursuant to Sub-section (2). <br><br>
+(7) The Marriage Registration Officer shall register the marriage into the
+marriage register maintained in the prescribed format mentioning the details of the
+marriage, in case such marriage or marital relation is decided to be registered upon
+the completion of the procedure of Sub-section (3) and the couple, witnesses and
+the Marriage Registration Officer shall put signature in the marriage register. 
+
+
+
+
+
+					</p>
+				</article>
+			</section>
+		</main>
+	</div>
+	<footer>
+			<p>&copy; e-Kanoon, 2018.</p>
+			<p>Digital Repositary of All Central & State Acts</p>
+	</footer>
+	<script type="text/javascript">
+
+
+		document.getElementById('internalSearchForm').onsubmit = function(event){
+			event.preventDefault();
+			clicked();
+		};
+
+	  	function clicked(){
+
+			var part_value = document.getElementById('part_value').value;
+			var schedule_value = document.getElementById('schedule_value').value;
+			var article_value = document.getElementById('article_value').value;
+
+			if(part_value!="")
+				link = "part"+part_value;
+			else if(schedule_value!="")
+				link = "schedule"+schedule_value;
+			else if(article_value!="")	
+				link = "article"+article_value;
+
+		    window.location = "file:///C:/xampp/htdocs/ekanoon/index.html#"+link;
+		    document.getElementById('myForm').reset();
+	  	}
+	</script>
+</body>
+</html>

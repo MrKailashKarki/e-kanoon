@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Marriage Registration Act 2028</title>
+</head>
+<body>
+	<header>
+			<a href="../">
+					<img id="logo" src="logo.png">
+				</a>
+			<nav class="sp-nav">
+				<ul>
+					<li><a href="../">गृहपृष्ठ</a></li>
+					<li><a href="#">हाम्रो बारेमा </a></li>
+					<li><a href="#">सम्पर्क</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<div id="container">
+
+		<main>
+			<aside id="sidebar-right">
+				<div>
+					<a href="mra2048pdf.pdf">छाप्नुहोस्</a>
+				</div>
+				<div>
+					<a href="mra2048pdf.pdf" download="">डाउन्लोड लिंक्स</a>
+				</div>
+				<div>
+					<a href="mra2048pdf.pdf#view=fitH">फुल स्क्रीन हेर्नुहोस  </a>
+				</div>
+				<div>
+					<a href="../../en/laws/mra2048.html">See English Version</a>
+				</div>
+				<div>
+					<strong>  प्रकाशन मिती :</strong> असोज ३, २०७२
+				</div>
+				<div>
+					<strong>भागहरू :</strong> ३५ भाग, ३०८ धारा
+				</div>
+			</aside>
+			<section id="main-section">
+				<form id="internalSearchForm" autocomplete="off">  
+					<input type="text" id="part_value" placeholder="भाग">
+					
+					<label>
+						or 
+					</label>
+					<input type="text" id="schedule_value" placeholder="अनुसूची">
+					
+					<label>
+						or 
+					</label>
+					<input type="text" id="article_value" placeholder="धारा">
+					<button type="submit">
+						Go
+					</button>
+				</form>
+				<iframe id="myFrame" src="mra2048pdf.pdf#view=fitH" width="99%" height="99%" type="application/pdf"></iframe>
+			</section>
+		</main>
+	</div>
+	<footer>
+			<p>&copy; e-Kanoon, 2018.</p>
+			<p>Digital Repositary of All Central & State Acts</p>
+	</footer>
+	<script type="text/javascript">
+
+
+		document.getElementById('internalSearchForm').onsubmit = function(event){
+			event.preventDefault();
+			clicked();
+		};
+
+	  	function clicked(){
+
+			var part_value = document.getElementById('part_value').value;
+			var schedule_value = document.getElementById('schedule_value').value;
+			var article_value = document.getElementById('article_value').value;
+
+			if(part_value!="")
+				link = "part"+part_value;
+			else if(schedule_value!="")
+				link = "schedule"+schedule_value;
+			else if(article_value!="")	
+				link = "article"+article_value;
+
+		    window.location = "file:///C:/xampp/htdocs/ekanoon/index.html#"+link;
+		    document.getElementById('myForm').reset();
+	  	}
+	</script>
+</body>
+</html>

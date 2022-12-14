@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+.sp-header{
+	background: #fff;
+
+}
+.sp-container{
+	margin: 0 auto;
+	width: 90%;
+}
+.sp-header-logo{
+	float: left;
+	width: 234px;
+}
+
+.sp-nav{
+	float: right;
+}
+.sp-nav ul{
+	font-family: century gothic;
+	font-size: 23px;
+	margin-bottom: 0;
+}
+
+.sp-nav ul li{
+	display: inline;
+	padding: 0 5px;
+}
+
+.sp-nav ul li a{
+	text-decoration: none;
+	color: black;
+	line-height: 44px;
+}
+.sp-nav ul li a:hover{
+	color: blue;
+}
+
+.sp-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+}
+h1, h2, h3, h4, h5, h6{
+	margin-bottom: 10px;
+}
+p{
+	margin-bottom: 20px;
+}
+ul, ol{
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.sp-content{
+	background: white;
+	margin:20px 0 ;
+	float: left;
+	width: 70%;
+	text-align: justify;
+}
+.sp-article{
+	padding: 10px 30px;
+}
+.sp-sidebar{
+	background: white;
+	float: right;
+	width: 25%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+.sp-sidebar ul li a{
+	text-decoration: none;
+	color: black;
+}
+.sp-sidebar ul li a:hover{
+	color: blue;
+}
+
+.clearfix::after{
+	content: " ";
+	visibility: none;
+	display: block;
+	clear: both;
+}
+
+.sp-footer{
+	background: white;
+	text-align: center;
+	font-size: 23px;
+	font-family: century gothic;
+	padding: 15px 0;
+
+}
